@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This KeyWord</title>
+</head>
+<body>
+
+    <script>
+
+        const car = {
+            model: "kijang",
+            color: "red",
+            year: 2023,
+
+            drive : function(){
+                console.log(`You Drive The ${this.model}`)
+            },
+            brake : function(){
+                console.log(`You Brakes The ${this.model}`)
+            }
+        }
+
+        car.drive();
+        car.brake();
+        
+        console.log(car.model);
+
+        const car2 = {
+            model: "avanza",
+            color: "blue",
+            year: 2023,
+
+            drive : function(){
+                console.log(`You Drive The ${car2.model}`)
+            },
+            brake : function(){
+                console.log(`You Brakes The ${car2.model}`)
+            }
+        }
+
+        car2.drive();
+        car2.brake();
+        
+        console.log(car2.model);
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Format Currency</title>
+</head>
+<body>
+    
+    <script>
+
+        let myNum = 5467.21;
+
+        // myNum = myNum.toLocaleString("en-US"); //US english;
+        // myNum = myNum.toLocaleString("id-ID"); //Indonesia;
+        // myNum = myNum.toLocaleString("hi-IN"); //Hindi;
+        // myNum = myNum.toLocaleString("de-DE"); //Standar German;
+
+        // myNum = myNum.toLocaleString("id-ID", {style : "currency", currency : "IDR"});
+
+        myNum = myNum.toLocaleString(undefined, {style : "unit", unit : "celsius"});
+
+
+        console.log(myNum);
+
+
+
+    </script>
+
+</body>
+</html>

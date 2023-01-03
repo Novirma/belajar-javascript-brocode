@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Statement</title>
+</head>
+<body>
+
+    <script>
+
+        let area;
+        let width;
+        let height;
+
+        width = window.prompt("Enter Width");
+        height = window.prompt("Enter Height");
+
+        area = getArea(width, height);
+
+        console.log(`The Area is : ${area}`);
+
+        function getArea(){
+            let result = width * height;
+            return result;
+        }
+
+
+    </script>
+    
+</body>
+</html>

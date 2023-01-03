@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Function</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let userName = "Chika";
+        let userInbox = 3;
+
+        login();
+
+
+        function login(){
+
+            function displayUserName(){
+                console.log(`Welcome ${userName}`);
+            }
+
+            function displayUserInbox(){
+                console.log(`You Have ${userInbox} new message`);
+            }
+
+            displayUserName();
+            displayUserInbox();
+
+
+            
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>

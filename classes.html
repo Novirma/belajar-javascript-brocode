@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    
+    <script>
+
+        class player{
+            score = 0;
+
+            pause(value){
+                console.log(`You Pause The game ${value}`);
+            }
+            exit(){
+                console.log("You Exited The Game");
+            }
+        }
+
+        const player1 = new player;
+        const player2 = new player;
+        const player3 = new player;
+        const player4 = new player;
+        const player5 = new player;
+
+        player1.score += 1;
+
+        console.log(player1.score);
+
+        player1.pause("player1");
+        player1.exit();
+
+        console.log(player3.score);
+
+        player3.pause();
+        player3.exit();
+
+
+
+    </script>
+
+</body>
+</html>

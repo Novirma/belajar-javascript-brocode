@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypotenuse Calc</title>
+</head>
+
+<body>
+
+    <label for="" id="aLabel">Side A:</label><br>
+    <input type="text" id="aTextBox"><br>
+    <label for="" id="bLabel">Side B:</label><br>
+    <input type="text" id="bTextBox"><br>
+    <button type="button" id="submitButton">Submit</button><br>
+    <label for="" id="cLabel"></label>
+
+
+
+    <script>
+        //Membuat Rumus Pascal
+
+        // let a;
+        // let b;
+        // let c;
+
+        // a = window.prompt("Enter Side A");
+        // a = Number(a);
+
+        // b = window.prompt("Enter Side B");
+        // b = Number(b);
+
+        // c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+        // console.log(`Side C : ${c}`);
+
+        document.getElementById("submitButton").onclick = function () {
+            a = document.getElementById("aTextBox").value;
+            a = Number(a);
+
+            b = document.getElementById("bTextBox").value;
+            b = Number(b);
+
+            c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+            document.getElementById("cLabel").innerHTML = `Side C : ${c}`;
+
+            console.log(`Side C : ${c}`);
+        }
+
+    </script>
+</body>
+
+</html>

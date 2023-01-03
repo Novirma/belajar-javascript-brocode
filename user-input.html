@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input</title>
+</head>
+<body>
+
+    <label for="" id="myLabel">Enter Your Name</label><br>
+    <input type="text" name="" id="myText"><br>
+    <button type="button" id="myButton">submit</button>
+
+
+    <script>
+
+        let username;
+
+        document.getElementById("myButton").onclick = function(){
+
+            username = document.getElementById("myText").value;
+            console.log(username);
+            document.getElementById("myLabel").innerHTML = `Hello ${username}`;
+
+        }  
+
+    </script>
+    
+</body>
+</html>

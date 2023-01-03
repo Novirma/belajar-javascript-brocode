@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Loops</title>
+</head>
+<body>
+
+    <label for="" id="myRectangle"></label>
+
+
+    <script>
+
+        let rows = window.prompt("Enter # of Rows!");
+        let coloumn = window.prompt("Enter # of coloumn!");
+
+        for(let i = 1; i <=rows; i+=1){
+            for(let j =1; j <=coloumn; j+=1){
+                document.getElementById("myRectangle").innerHTML += j;
+            }
+            document.getElementById("myRectangle").innerHTML += "<br>"; 
+        }
+
+
+    </script>
+    
+</body>
+</html>
