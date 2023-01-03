@@ -11,9 +11,37 @@
 
     <script>
 
-        
+        class Student{
+            
+            constructor(name, age, ipk){
+                this.name = name;
+                this.age = age;
+                this.ipk = ipk;
+            }
+            study(){
+                console.log(`${this.name} is studying`);
+            }
+        }
+
+        const student1 = new Student("Chika", 17, 3.9);
+        const student2 = new Student("Nozomi", 17, 3.7);
+        const student3 = new Student("Tsumugi", 14, 3.2);
 
 
+        console.log(student1.name);
+        console.log(student1.age);
+        console.log(student1.ipk);
+        student1.study();
+
+        console.log(student2.name);
+        console.log(student2.age);
+        console.log(student2.ipk);
+        student2.study();
+
+        console.log(student3.name);
+        console.log(student3.age);
+        console.log(student3.ipk);
+        student3.study();
 
     </script>
 
