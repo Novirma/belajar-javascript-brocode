@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+
+<body>
+
+    <script>
+
+        class Animal {
+
+            alive = true;
+
+            eat() {
+                console.log(`${this.name} is eating`);
+            }
+
+            sleep() {
+                console.log(`${this.name} is sleeping`);
+            }
+        }
+
+        class Fish extends Animal {
+
+            name = "fish"
+
+            swim() {
+                console.log(`${this.name} is Swimming`)
+            }
+        }
+
+        class Rabbit extends Animal {
+
+            name = "rabbit"
+
+            run() {
+                console.log(`${this.name} is Running`)
+            }
+        }
+
+        class Eagle extends Animal {
+
+            name = "eagle"
+
+            fly() {
+                console.log(`${this.name} is Flying`)
+            }
+        }
+
+        const fish = new Fish;
+        const rabbit = new Rabbit;
+        const eagle = new Eagle;
+        const animal = new Animal;
+
+        console.log(fish.alive);
+        fish.eat();
+        fish.sleep();
+        fish.swim();
+
+        console.log(eagle.alive);
+        eagle.eat();
+        eagle.sleep();
+        eagle.fly();
+
+        console.log(rabbit.alive);
+        rabbit.eat();
+        rabbit.sleep();
+        rabbit.run();
+
+        animal.eat();
+
+        
+
+
+
+    </script>
+
+</body>
+
+</html>

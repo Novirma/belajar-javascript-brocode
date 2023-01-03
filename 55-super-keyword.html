@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Keyword</title>
+</head>
+<body>
+    
+
+    <script>
+
+        class Animal{
+            constructor(name, age){
+                this.name = name;
+                this.age = age
+            }
+
+        }
+
+        class Rabbit extends Animal{
+            
+            constructor(name, age, runSpeed){
+
+                super(name,age);
+                this.runSpeed = runSpeed;
+
+
+            }
+        }
+
+        class Fish extends Animal{
+            
+            constructor(name, age, swimSpeed){
+
+                super(name,age);
+                this.swimSpeed = swimSpeed;
+
+
+            }
+        }
+
+        class Eagle extends Animal{
+            
+            constructor(name, age, flySpeed){
+
+                super(name,age);
+                this.flySpeed = flySpeed;
+
+
+            }
+        }
+
+        const rabbit = new Rabbit("Rabbit", 1, 40);
+        const fish = new Fish("Fish", 1, 80);
+        const eagle = new Eagle("Eagle", 1, 150);
+
+
+        console.log(rabbit.name);
+        console.log(rabbit.age);
+        console.log(rabbit.runSpeed);
+
+        console.log(fish.name);
+        console.log(fish.age);
+        console.log(fish.swimSpeed);
+
+        console.log(eagle.name);
+        console.log(eagle.age);
+        console.log(eagle.flySpeed);
+
+
+
+
+    </script>
+
+
+</body>
+</html>
