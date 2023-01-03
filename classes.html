@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classes</title>
 </head>
+
 <body>
-    
+
     <script>
 
-        class player{
+        class player {
             score = 0;
 
-            pause(value){
+            pause(value) {
                 console.log(`You Pause The game ${value}`);
             }
-            exit(){
+            exit() {
                 console.log("You Exited The Game");
             }
         }
@@ -39,9 +41,16 @@
         player3.pause();
         player3.exit();
 
+        console.log(player4.score);
+
+        player4.pause();
+        player4.exit();
+
+
 
 
     </script>
 
 </body>
+
 </html>
