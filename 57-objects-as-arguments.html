@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object As Arguments</title>
+</head>
+<body>
+
+    <script>
+
+        class Car{
+            constructor(model, year, color){
+                this.model = model;
+                this.year = year;
+                this.color = color;
+            }
+        }
+
+        const car1 = new Car("Kijang", 2006, "green");
+        const car2 = new Car("Avanza", 2010, "blue");
+        const car3 = new Car("Karimun", 2008, "red");
+        
+        displayInfo(car1);
+        changeColor(car3, "gold");
+        displayInfo(car3);
+
+
+        function displayInfo(car){
+            console.log(car.year);
+            console.log(car.model);
+            console.log(car.color);
+        }
+
+        function changeColor(car, color){
+            car.color = color;
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
