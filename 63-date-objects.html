@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Objects</title>
+</head>
+<body>
+
+    <label for="" id="myLabel"></label>
+    
+
+    <script>
+
+        let date = new Date();
+        // let date = new Date(0);
+        // let date = new Date(2023, 0, 1, 2, 3, 4, 5);
+        // let date = new Date("January 1, 2023 00:00:00");
+
+
+        // date = date.toLocaleString();
+        console.log(date);
+        const myLabel = document.getElementById("myLabel");
+
+        myLabel.innerHTML = formatDate(date);
+
+        function formatDate(date){
+            let year = date.getFullYear();
+            let month = date.getMonth() + 1;
+            let day = date.getDate();
+
+            return `${month}/${day}/${year}`;
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

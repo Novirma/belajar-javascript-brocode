@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set TimeOut</title>
+</head>
+<body>
+
+    <button id="myButton">Button</button>
+    
+    <script>
+
+        let item = "motor";
+        let price = 350;
+
+        let timer1 = setTimeout(firstMessage, 3000, item, price);
+        let timer2 = setTimeout(secondMessage, 6000);
+        let timer3 = setTimeout(thirMessage, 9000);
+
+
+        function firstMessage(item, price){
+            alert(`Buy This Item ${item} for $${price}`);
+        }
+
+        function secondMessage(){
+            alert("This is not SCAM!! DUDE");
+        }
+
+        function thirMessage(){
+            alert("DO IT!!!")
+        }
+
+        const myButton = document.getElementById("myButton");
+
+        myButton.onclick = function(){
+            clearTimeout(timer1);
+            clearTimeout(timer2);
+            clearTimeout(timer3);
+            alert("Thanks for buying :D")
+        }
+
+
+
+
+    </script>
+
+
+</body>
+</html>
