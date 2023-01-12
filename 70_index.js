@@ -1,7 +1,7 @@
-import {PI, getCircumference, getArea} from "./70_math_util.js";
-// import * as MathUtil from "./70_math_util.js";
+// import {PI, getCircumference, getArea} from "./70_math_util.js";
+import * as MathUtil from "./70_math_util.js";
 
-console.log(PI);
+console.log(MathUtil.PI);
 
 let circumference = MathUtil.getCircumference(10);
 console.log(circumference);
