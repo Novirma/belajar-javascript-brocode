@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide HTML Elements</title>
+</head>
+
+<body>
+
+    <button id="myButton">toggle</button>
+    <image id="myImg" src="car.jpg" style="visibility: hidden;">
+        <p>Press the button...</p>
+
+        <script>
+
+            const myButton = document.querySelector("#myButton");
+            const myImg = document.querySelector("#myImg");
+
+            myButton.addEventListener("click", () => {
+
+                if (myImg.style.visibility == "hidden") {
+                    myImg.style.visibility = "visible";
+                }
+                else {
+                    myImg.style.visibility = "hidden";
+                }
+            })
+
+
+        </script>
+
+</body>
+
+</html>
